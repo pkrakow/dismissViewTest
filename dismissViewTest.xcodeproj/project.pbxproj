@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		DAC15E1A25D071030052B85D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC15E1925D071030052B85D /* ContentView.swift */; };
 		DAC15E1C25D071040052B85D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAC15E1B25D071040052B85D /* Assets.xcassets */; };
 		DAC15E1F25D071040052B85D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAC15E1E25D071040052B85D /* Preview Assets.xcassets */; };
+		DAC15E2925D0732D0052B85D /* NavigationStack in Frameworks */ = {isa = PBXBuildFile; productRef = DAC15E2825D0732D0052B85D /* NavigationStack */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAC15E2925D0732D0052B85D /* NavigationStack in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = dismissViewTest;
+			packageProductDependencies = (
+				DAC15E2825D0732D0052B85D /* NavigationStack */,
+			);
 			productName = dismissViewTest;
 			productReference = DAC15E1425D071030052B85D /* dismissViewTest.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,9 @@
 				Base,
 			);
 			mainGroup = DAC15E0B25D071030052B85D;
+			packageReferences = (
+				DAC15E2725D0732D0052B85D /* XCRemoteSwiftPackageReference "swiftui-navigation-stack" */,
+			);
 			productRefGroup = DAC15E1525D071030052B85D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -328,6 +336,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DAC15E2725D0732D0052B85D /* XCRemoteSwiftPackageReference "swiftui-navigation-stack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/matteopuc/swiftui-navigation-stack.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DAC15E2825D0732D0052B85D /* NavigationStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAC15E2725D0732D0052B85D /* XCRemoteSwiftPackageReference "swiftui-navigation-stack" */;
+			productName = NavigationStack;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DAC15E0C25D071030052B85D /* Project object */;
 }

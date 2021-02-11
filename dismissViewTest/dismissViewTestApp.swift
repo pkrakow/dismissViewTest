@@ -11,7 +11,8 @@ import SwiftUI
 struct dismissViewTestApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            //ContentView()
+            RootView()
         }
     }
 }
